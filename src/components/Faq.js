@@ -1,44 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
+import { IoChevronDownOutline } from "react-icons/io5";
 
 const Faq = () => {
+  const [isOpen1, setIsOpen1] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
+
   return (
     <div>
       <div className="text-5xl font-bold tracking-wide bg-clip-text self-stretch mt-40 max-md:max-w-full max-md:text-4xl max-md:mt-10">
         FAQ
       </div>
-      <span className="justify-between items-center border flex w-[848px] max-w-full gap-5 mt-11 px-6 py-4 rounded-xl border-solid border-blue-600 self-start max-md:flex-wrap max-md:mt-10 max-md:px-5">
+      <div
+        onClick={() => setIsOpen1(!isOpen1)}
+        className="w-1/2  border flex  text-left gap-5 mt-11 px-6 py-4 rounded-xl border-solid border-blue-600 self-start max-md:flex-wrap max-md:px-5 flex-col "
+      >
         <div className="text-zinc-800 text-base font-semibold leading-7 grow shrink basis-auto my-auto">
-          Can education flashcards be used for all age groups?
+          <span className="flex justify-between w-full items-center">
+            Can education flashcards be used for all age groups?
+            <IoChevronDownOutline />
+          </span>
         </div>
-        <img
-          alt=""
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/41d1dbfbefa0e872a41ec093030280941582c1c5ac671c6f897ff83d21967471?apiKey=6eecde7a29ee4cb9abef5e4d0032874f&"
-          className="aspect-square object-contain object-center w-6 overflow-hidden self-stretch shrink-0 max-w-full"
-        />
-      </span>
-      <span className="justify-between items-center border flex w-[848px] max-w-full gap-5 mt-8 px-6 py-4 rounded-xl border-solid border-blue-600 self-start max-md:flex-wrap max-md:px-5">
+        {isOpen1 && (
+          <div>
+            {" "}
+            Yes, education flashcards can be tailored to different age groups
+            and learning levels. There are flashcards designed for preschoolers,
+            elementary school students, high school students, and even for
+            college-level and adult learners.
+          </div>
+        )}
+      </div>
+      <div
+        onClick={() => setIsOpen2(!isOpen2)}
+        className="w-1/2  border flex  text-left gap-5 mt-11 px-6 py-4 rounded-xl border-solid border-blue-600 self-start max-md:flex-wrap max-md:px-5 flex-col"
+      >
         <div className="text-zinc-800 text-base font-semibold leading-7 grow shrink basis-auto my-auto">
-          How do education flashcards work?
+          <span className="flex justify-between w-full items-center">
+            How do education flashcards work?
+            <IoChevronDownOutline />
+          </span>
         </div>
-        <img
-          alt=""
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/41d1dbfbefa0e872a41ec093030280941582c1c5ac671c6f897ff83d21967471?apiKey=6eecde7a29ee4cb9abef5e4d0032874f&"
-          className="aspect-square object-contain object-center w-6 overflow-hidden self-stretch shrink-0 max-w-full"
-        />
-      </span>
-      <span className="justify-between items-center border flex w-[848px] max-w-full gap-5 mt-8 px-6 py-4 rounded-xl border-solid border-blue-600 self-start max-md:flex-wrap max-md:px-5">
+        {isOpen2 && (
+          <div>
+            Education flashcards work by presenting a question or prompt on one
+            side and the corresponding answer or information on the other. Users
+            can review the cards repeatedly, reinforcing their memory and
+            enhancing learning through repetition.
+          </div>
+        )}
+      </div>
+      <div
+        onClick={() => setIsOpen3(!isOpen3)}
+        className="w-1/2  border flex  text-left gap-5 mt-11 px-6 py-4 rounded-xl border-solid border-blue-600 self-start max-md:flex-wrap max-md:px-5 flex-col"
+      >
         <div className="text-zinc-800 text-base font-semibold leading-7 grow shrink basis-auto my-auto max-md:max-w-full">
-          Can education flashcards be used for test preparation?
+          <span className="flex justify-between w-full items-center">
+            Can education flashcards be used for test preparation?
+            <IoChevronDownOutline />
+          </span>
         </div>
-        <img
-          alt=""
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/41d1dbfbefa0e872a41ec093030280941582c1c5ac671c6f897ff83d21967471?apiKey=6eecde7a29ee4cb9abef5e4d0032874f&"
-          className="aspect-square object-contain object-center w-6 overflow-hidden self-stretch shrink-0 max-w-full"
-        />
-      </span>
+        {isOpen3 && (
+          <div>
+            Absolutely. Flashcards are an excellent tool for test preparation,
+            allowing students to review key concepts, terms, and facts. They
+            provide a quick and focused way to reinforce knowledge before exams.
+          </div>
+        )}
+      </div>
     </div>
   );
 };

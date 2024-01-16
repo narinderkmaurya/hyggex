@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "../images/logo.png"
-
+import logo from "../images/logo.png";
+import text from "../images/text.png";
+import vector from "../images/Vector.png";
 const Sponsors = () => {
   return (
     <div>
@@ -17,7 +18,7 @@ const Sponsors = () => {
             <img
               alt=""
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/02fb4ad4a76d997f4b9073c5c39df6810a74e6155727b614b3ed775b635eb9de?apiKey=6eecde7a29ee4cb9abef5e4d0032874f&"
+              src={text}
               className="aspect-[3.38] object-contain object-center w-[115px] overflow-hidden self-center mt-3"
             />
           </span>
@@ -26,7 +27,7 @@ const Sponsors = () => {
           <img
             alt=""
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/95c59588471b8d9b63490dd0b19cf3b828d5cbea675e4b720325df86d8ff847a?apiKey=6eecde7a29ee4cb9abef5e4d0032874f&"
+            src={vector}
             className="aspect-square object-contain object-center w-[60px] overflow-hidden shrink-0 max-w-full"
           />
           <div className="text-3xl font-semibold bg-clip-text self-center grow whitespace-nowrap my-auto">
