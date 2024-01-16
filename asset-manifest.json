@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hyggex/static/css/main.12ce81f3.css",
+    "main.js": "/hyggex/static/js/main.9fa7ab2e.js",
+    "static/media/logo.png": "/hyggex/static/media/logo.967898e21699079297e7.png",
+    "static/media/bulb.svg": "/hyggex/static/media/bulb.24c21938d51f2464712db1ab4a810cbd.svg",
+    "index.html": "/hyggex/index.html",
+    "main.12ce81f3.css.map": "/hyggex/static/css/main.12ce81f3.css.map",
+    "main.9fa7ab2e.js.map": "/hyggex/static/js/main.9fa7ab2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12ce81f3.css",
+    "static/js/main.9fa7ab2e.js"
+  ]
+}
